@@ -2,7 +2,7 @@
 
 This script is used to deploy the entire HDS E2E solution. It creates the necessary resources in Azure, including the FHIR Service, Azure Key Vault, Service Principal, and FHIR Loader Function App Service. It also generates synthetic data using Synthea and sends it to the Azure Storage Account for the FHIR Loader to process. The fhir-loader app sends the generated Synthea data to your new FHIR Service.
 
-![deployment diagram](.\images\CreatingaFHIRSandboxforMicrosoftFabric-AppFlow.jpg)
+![deployment diagram](./images/CreatingaFHIRSandboxforMicrosoftFabric-AppFlow.jpg)
 
 ## Prerequisites
 
@@ -16,7 +16,7 @@ Before running this script, make sure you have the following tools installed. I 
 
 ## Deployment Steps
 
-![deployment diagram](.\images\CreatingaFHIRSandboxforMicrosoftFabric-Deployment.jpg)
+![deployment diagram](./images/CreatingaFHIRSandboxforMicrosoftFabric-Deployment.jpg)
 
 1. Run `.\prereqs.ps1` to ensure all necessary tools are installed.
 2. Set the deployment variables in the script:
