@@ -21,12 +21,30 @@ $akvName = "hdsakveus"
 $location= 'eastus'
 $fhirServiceName = $svcNamingPrefix+"fhir"+$location
 $ahdsServiceName = "hltwrk$location"
-$cogSvcAcctName = $svcNamingPrefix+"txtcog"+$location+$(Get-Random -Maximum 200)
 
+
+# Check for Resource Group. Create if it doesn't exist
 if (!(Get-AzResourceGroup -Name $resourceGroupName -ErrorAction SilentlyContinue)) {
     New-AzResourceGroup -Name $resourceGroupName -Location $location
 } else {
     "Resource Group $resourceGroupName already exists. Moving on to check for FHIR Service Group."
+}
+
+# Check for Cognitive Language Services Account. Change the variable name if it does exist already as it has random characters. This keeps the script idempotent.
+if ((Get-AzCognitiveServicesAccount -ResourceGroupName $resourceGroupName -ErrorAction SilentlyContinue)) {
+    $cogSvcAcctName = (Get-AzCognitiveServicesAccount -ResourceGroupName $resourceGroupName).AccountName
+    Write-Host "Cognitive Services"$cogSvcAcctName"already exists. Moving on to check for FHIR Export Storage Account."
+} else {
+    $cogSvcAcctName = $svcNamingPrefix+"txtcog"+$location+$(Get-Random -Maximum 200)
+}
+
+# Check for export Storage Account. Create the exportSAName variable if it doesn't exist else use the existing name with random numbers. This keeps the script idempotent.
+if (!((Get-AzStorageAccount -ResourceGroupName $resourceGroupName).StorageAccountName.StartsWith($svcNamingPrefix+"export"))) {
+    $exportSAName = $svcNamingPrefix+"export"+$(Get-Random -Maximum 40)
+    Write-Host "Export Storage Account does not exist. Setting up $exportSAName variable."
+} else {
+    $exportSAName = (Get-AzStorageAccount -ResourceGroupName $resourceGroupName | ? {$_.StorageAccountName -match ($svcNamingPrefix+"export")}).StorageAccountName
+    Write-Host "Export Storage Account $exportSAName already exists. Moving on to check for FHIR Service Group."
 }
 
 # Check for FHIR Service Group. Create if it doesn't exist
@@ -104,7 +122,8 @@ akvName = $akvName
 fhirServiceName=$fhirServiceName
 ahdsServiceName=$ahdsServiceName
 cogSvcAcctName=$cogSvcAcctName
-location=$location}
+location=$location
+exportSAName=$exportSAName}
 
 # Set-AzMarketplaceTerms -Name healthcare-data-solutions-on-microsoft-fabric -Publisher ics-solutioncenter -Product healthcare-data-solutions-on-microsoft-fabric -Accept
 
@@ -203,13 +222,3 @@ foreach ($file in Get-ChildItem $PWD\output\fhir\*.json) {
         Move-Item $file.FullName $PWD\output\failed
     }
 }
-
-# Create a README file
-$readmeContent = @"
-
-"@
-
-$readmePath = "C:\Users\joeyb\OneDrive - Microsoft\git\hds-e2e\README.md"
-$readmeContent | Out-File -FilePath $readmePath -Encoding UTF8
-
-Write-Host "README file created at $readmePath"

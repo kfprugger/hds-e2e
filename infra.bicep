@@ -9,14 +9,21 @@ param fhirKind string = 'fhir-R4'
 param fhirAdminOID string 
 param cogSvcAcctName string 
 param currentUserId string
-
-@description('The role definition ID for the Key Vault role assignment for R/W on Secrets on the vault for User and Passwords.')
-param keyVaultRoleDef string = 'b86a8fe4-44ce-4948-aee5-eccb2c155cd7'
+param exportSAName string
 param akvName string 
+
+@description('Static Role ID Storage Blob Data Contributor on storage account')
+param storageBlobContributorId string = 'ba92f5b4-2d11-453d-a403-e96b0029c9fe'
 
 
 @description('The Bulk Loader function app needs to access the FHIR service. This is the role assignment ID to use.')
 param fhirContributorRoleAssignmentId string = '5a1fc7df-4bf1-4951-a576-89034ee01acd'
+
+@description('The role definition ID for the Storage Blob Data Contributor role assignment.')
+resource storageBlobContribRole 'Microsoft.Authorization/roleAssignments@2022-04-01' existing = {
+  name: storageBlobContributorId
+  scope: subscription()
+}
 
 resource healthcareAPIsWorkspace 'Microsoft.HealthcareApis/workspaces@2024-03-31' = {
   name: ahdsServiceName
@@ -40,8 +47,11 @@ resource fhirService 'Microsoft.HealthcareApis/workspaces/fhirservices@2024-03-3
       audience: 'https://${ahdsServiceName}-${fhirServiceName}.fhir.azurehealthcareapis.com'
     }
     publicNetworkAccess: 'Enabled'
-
+    exportConfiguration: {
+      storageAccountName: exportSA.name
+    }
   }
+  
 }
 
 output fhirServiceUri string = 'https://${healthcareAPIsWorkspace.name}-${fhirService.name}.fhir.azurehealthcareapis.com'
@@ -85,50 +95,6 @@ resource cogSvcAcct 'Microsoft.CognitiveServices/accounts@2023-05-01' = {
   }
 }
 
-// resource hdsAKV 'Microsoft.KeyVault/vaults@2023-07-01' = {
-//   name: akvName
-//   location: location
-//   properties: {
-//     sku: {
-//       family: 'A'
-//       name: 'standard'
-//     }
-//     accessPolicies: [
-//       {
-//         tenantId: subscription().tenantId
-//         objectId: fhirAdminOID
-//         permissions: {
-//           keys: ['all']
-//           secrets: ['all']
-//           certificates: ['all']
-//         }
-//       }
-//     ]
-//     tenantId: subscription().tenantId
-//     enableSoftDelete: false
-//     enableRbacAuthorization: true
-//   }
-// }
-
-// output keyVaultName string = hdsAKV.name
-
-// resource roleAssignment 'Microsoft.Authorization/roleAssignments@2022-04-01' = {
-//   name: guid('hdsakveus', 'Microsoft.KeyVault/vaults', resourceGroup().name)
-//   scope: hdsAKV
-//   properties: {
-//     principalId: fhirAdminOID
-//     roleDefinitionId: keyVaultRoleDef
-//   }
-// }
-
-// resource role4DeployingAcct 'Microsoft.Authorization/roleAssignments@2022-04-01' = {
-//   name: guid('hdsakveus', 'Microsoft.KeyVault/vaults', resourceGroup().name)
-//   scope: hdsAKV
-//   properties: {
-//     principalId: currentUserId
-//     roleDefinitionId: keyVaultRoleDef
-//   }
-// }
 
 resource hdsAKV 'Microsoft.KeyVault/vaults@2023-07-01' existing = {
   name: akvName
@@ -141,6 +107,51 @@ resource fhirApiUriSecret 'Microsoft.KeyVault/vaults/secrets@2023-07-01' = {
     value: 'https://${ahdsServiceName}-${fhirServiceName}.azurehealthcareapis.com'
   }
 }
+
+resource exportSA 'Microsoft.Storage/storageAccounts@2023-05-01' = {
+  name: exportSAName
+  location: location
+  sku: {
+    name: 'Standard_LRS'
+  }
+  kind: 'StorageV2'
+
+  resource service 'blobServices' = {
+    name: 'default'
+    resource ndjsoncont 'containers' = {
+      name: 'ndjsonexport'
+    }
+  }
+}
+
+resource storageBlobContribRoleAssignment4FHIR 'Microsoft.Authorization/roleAssignments@2022-04-01' = {
+  name: guid('ba92f5b4-2d11-453d-a403-e96b0029c9fe', exportSA.id, fhirService.id)
+  scope: exportSA
+  properties: {
+    roleDefinitionId: storageBlobContribRole.id
+    principalId: fhirService.identity.principalId
+  }
+  
+}
+
+
+resource storageBlobContribRoleAssignmentFxn 'Microsoft.Authorization/roleAssignments@2022-04-01' = {
+  name: guid('ba92f5b4-2d11-453d-a403-e96b0029c9fe', exportSA.id, currentUserId)
+  scope: exportSA
+  properties: {
+    roleDefinitionId: storageBlobContribRole.id
+    principalId: currentUserId
+  }
+}
+resource storageBlobContribRoleAssignmentAdmins 'Microsoft.Authorization/roleAssignments@2022-04-01' = {
+    name: guid('ba92f5b4-2d11-453d-a403-e96b0029c9fe', exportSA.id, fhirAdminOID)
+    scope: exportSA
+    properties: {
+      roleDefinitionId: storageBlobContribRole.id
+      principalId: fhirAdminOID
+    }
+}
+  
 
 
 
