@@ -6,7 +6,7 @@ This script is used to deploy the entire HDS E2E solution. It creates the necess
 
 ## Prerequisites
 
-Before running this script, make sure you have the following tools installed. I created a simple [.\prereqs.ps1](prereqs.ps1) script in this repo to assist you in this.
+Before running this script, make sure you have the following tools installed. I created a simple [./prereqs.ps1](prereqs.ps1) script in this repo to assist you in this.
 
 - Azure PowerShell module
 - Docker
@@ -26,7 +26,7 @@ Before running this script, make sure you have the following tools installed. I 
     - `$resourceGroupName`: The name of the resource group.
     - `$akvName`: The name of the Azure Key Vault.
     - `$location`: The Azure region where the resources will be deployed.
-3. Run the script `deploy.ps1`.
+3. Run the script [`deploy.ps1`](./deploy.ps1).
 4. Wait for the deployment to complete.
 5. Check the output for the FHIR Service URI and Azure Key Vault Name.
 
@@ -47,4 +47,4 @@ Before running this script, make sure you have the following tools installed. I 
 
 ## Contributing
 
-Contributions are welcome! Please submit a pull request with any improvements or bug fixes.
+Contributions are welcome! Please submit a pull request with any improvements or bu

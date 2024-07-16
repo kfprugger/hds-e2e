@@ -115,6 +115,10 @@ resource exportSA 'Microsoft.Storage/storageAccounts@2023-05-01' = {
     name: 'Standard_LRS'
   }
   kind: 'StorageV2'
+  properties: {
+    accessTier: 'Hot'
+    isHnsEnabled: true
+  }
 
   resource service 'blobServices' = {
     name: 'default'
@@ -124,6 +128,7 @@ resource exportSA 'Microsoft.Storage/storageAccounts@2023-05-01' = {
   }
 }
 
+@description('Role assignment for the FHIR service to write to the export storage account')
 resource storageBlobContribRoleAssignment4FHIR 'Microsoft.Authorization/roleAssignments@2022-04-01' = {
   name: guid('ba92f5b4-2d11-453d-a403-e96b0029c9fe', exportSA.id, fhirService.id)
   scope: exportSA
@@ -134,7 +139,7 @@ resource storageBlobContribRoleAssignment4FHIR 'Microsoft.Authorization/roleAssi
   
 }
 
-
+@description('Role assignment for the Bulk Loader function app to write to the export storage account')
 resource storageBlobContribRoleAssignmentFxn 'Microsoft.Authorization/roleAssignments@2022-04-01' = {
   name: guid('ba92f5b4-2d11-453d-a403-e96b0029c9fe', exportSA.id, currentUserId)
   scope: exportSA
@@ -143,6 +148,8 @@ resource storageBlobContribRoleAssignmentFxn 'Microsoft.Authorization/roleAssign
     principalId: currentUserId
   }
 }
+
+@description('Role assignment for the FHIR service Entra ID Group to write to the export storage account')
 resource storageBlobContribRoleAssignmentAdmins 'Microsoft.Authorization/roleAssignments@2022-04-01' = {
     name: guid('ba92f5b4-2d11-453d-a403-e96b0029c9fe', exportSA.id, fhirAdminOID)
     scope: exportSA

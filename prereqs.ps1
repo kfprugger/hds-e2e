@@ -63,16 +63,18 @@ if (-not (Get-Command "git" -ErrorAction SilentlyContinue)) {
     Write-Host "Git is already installed. Continuing with the script."
 }
 
-## Ensure that you are running the script as an Administrator
-if (-not ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
-    Write-Host "Please run this script as an Administrator."
-    break
-} else {
-    Write-Host "You are running this script as an Administrator. Continuing with the script."
-}
+
 
 ### AzCopy v10 installation
 if (-not (Get-Command "azcopy" -ErrorAction SilentlyContinue)) {
+    ## Ensure that you are running the script as an Administrator
+    if (-not ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
+        Write-Host "Please run this script as an Administrator to ensure we can update AzCopy env. path, if needed."
+        break
+    } else {
+    Write-Host "You are running this script as an Administrator. Continuing with the script."
+        }
+
     Write-Host "AzCopy v10 is not installed. Installing it now."
     mkdir $env:SystemDrive\AzCopy -ErrorAction SilentlyContinue
     Invoke-WebRequest -Uri https://aka.ms/downloadazcopy-v10-windows -OutFile $env:SystemDrive\AzCopy.zip

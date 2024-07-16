@@ -11,11 +11,16 @@
 .\prereqs.ps1
 
 # Begin the deployment process
+## change this to whatever short prefix you'd like. No more than 5 lowercase letters or numbers.
 $svcNamingPrefix = "rjb"
+
+## Entra ID Group name of the admins who will have access to the FHIR Service, storage account, and other parts of the infra deployment outside of the current user executing this script.
 $fhirAdminEntraGrpName = "sg-fhir-services"
 $spnName = "spn-fhir-service"
 $currentUserOID = (Get-AzADUser -UserPrincipalName $((Get-AzContext).Account.Id)).id
 $tenantId = (Get-AzContext).Tenant.Id
+
+## Create the resource group name, location, and service names
 $resourceGroupName = "rg-hdsinfra"
 $akvName = "hdsakveus"
 $location= 'eastus'
@@ -37,9 +42,20 @@ if ((Get-AzCognitiveServicesAccount -ResourceGroupName $resourceGroupName -Error
 } else {
     $cogSvcAcctName = $svcNamingPrefix+"txtcog"+$location+$(Get-Random -Maximum 200)
 }
+$exportSAExists = $false
+$exportSANamePattern = $svcNamingPrefix + "export"
+$storageAccounts = Get-AzStorageAccount -ResourceGroupName $resourceGroupName -ErrorAction SilentlyContinue
+if ($storageAccounts) {
+    foreach ($storageAccount in $storageAccounts) {
+        if ($storageAccount.StorageAccountName.StartsWith($exportSANamePattern)) {
+            $exportSAExists = $true
+            
+        }
+    }
+}
 
 # Check for export Storage Account. Create the exportSAName variable if it doesn't exist else use the existing name with random numbers. This keeps the script idempotent.
-if (!((Get-AzStorageAccount -ResourceGroupName $resourceGroupName).StorageAccountName.StartsWith($svcNamingPrefix+"export"))) {
+if ($exportSAExists -eq $false)  {
     $exportSAName = $svcNamingPrefix+"export"+$(Get-Random -Maximum 40)
     Write-Host "Export Storage Account does not exist. Setting up $exportSAName variable."
 } else {
