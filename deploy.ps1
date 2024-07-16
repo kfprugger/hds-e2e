@@ -27,6 +27,11 @@ $location= 'eastus'
 $fhirServiceName = $svcNamingPrefix+"fhir"+$location
 $ahdsServiceName = "hltwrk$location"
 
+## Synthea Variables
+$syntheticPatientCount = 10
+$syntheticHospitals = "true"
+$syntheticPractitioners = "true"
+
 
 # Check for Resource Group. Create if it doesn't exist
 if (!(Get-AzResourceGroup -Name $resourceGroupName -ErrorAction SilentlyContinue)) {
@@ -183,16 +188,7 @@ if ($(Invoke-WebRequest -Method GET -Headers $headers -Uri "$fhirServiceUri/Pati
     break
 }
 
-## Run Synthea to generate synthetic data
-"Generating Synthetic Data from Synthea. This may take a while if this is your first time running this."
-docker run --rm -v $PWD/output:/output --name synthea-docker intersystemsdc/irisdemo-base-synthea:version-1.3.4 -p 10 `
--s $(Get-Random) Tennessee Nashville `
---exporter.fhir.export=true `
---exporter.hospital.fhir.export=false `
---exporter.practitioner.fhir.export=false
-
-
-
+# Create the FHIR Loader Azure Deployment
 $params4FHIRLoader = @{
     prefix="rjb"
     fhirType="FhirService"
@@ -205,7 +201,7 @@ $params4FHIRLoader = @{
     fhirServiceUri=$fhirServiceUri
 }
 
-# Create the FHIR Loader Azure Deployment
+
 
 ## Uncomment when .bicep files are corrected to ensure latest fhir-loader deployment. This repo is under active development
 # if (!(Test-Path .\fhir-loader)){
@@ -220,6 +216,18 @@ foreach ($key in $fhirLoaderDeployment.Outputs.Keys) {
     $value = $fhirLoaderDeployment.Outputs[$key].Value
     Set-Variable -Name $key -Value $value
 }
+
+
+## Run Synthea to generate synthetic data
+"Generating Synthetic Data from Synthea. This may take a while if this is your first time running this."
+docker run --rm -v $PWD/output:/output --name synthea-docker intersystemsdc/irisdemo-base-synthea:version-1.3.4 -p $syntheticPatientCount `
+-s $(Get-Random) Tennessee Nashville `
+--exporter.fhir.export=true `
+--exporter.hospital.fhir.export=$syntheticHospitals `
+--exporter.practitioner.fhir.export=$syntheticPractitioners
+
+
+
 
 # Send the synthetic data to the Azure Storage Account for the FHIR Loader to process new files you just generated.
 $fhirSA = Get-AzStorageAccount -ResourceGroupName $resourceGroupName -Name $storageAccountName

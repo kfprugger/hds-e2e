@@ -1,0 +1,1572 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:00000190-bd13-08db-0000-00000000001e",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "00000190-bd13-08db-0000-00000000001e",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 41
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "30"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Harvey63",
+            "given": [
+              "Ozell178"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Ozell178.Harvey63@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "3441 DICKERSON PIKE"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37207",
+            "country": "US"
+          }
+        ],
+        "gender": "female"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00000190-bd13-08db-0000-0000000000a0",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "00000190-bd13-08db-0000-0000000000a0",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 167
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "160"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Hilpert278",
+            "given": [
+              "Shanel903"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Shanel903.Hilpert278@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "4321 CAROTHERS PARKWAY"
+            ],
+            "city": "FRANKLIN",
+            "state": "TN",
+            "postalCode": "37067",
+            "country": "US"
+          }
+        ],
+        "gender": "female"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00000190-bd13-08db-0000-0000000000e6",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "00000190-bd13-08db-0000-0000000000e6",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 95
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "230"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Kiehn525",
+            "given": [
+              "Matt836"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Matt836.Kiehn525@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "1211 MEDICAL CENTER DRIVE"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37232",
+            "country": "US"
+          }
+        ],
+        "gender": "male"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00000190-bd13-08db-0000-000000000172",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "00000190-bd13-08db-0000-000000000172",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 37
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "370"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Hane680",
+            "given": [
+              "Frederick289"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Frederick289.Hane680@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "100 NORTHCREST DRIVE"
+            ],
+            "city": "SPRINGFIELD",
+            "state": "TN",
+            "postalCode": "37172",
+            "country": "US"
+          }
+        ],
+        "gender": "male"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00000190-bd13-08db-0000-0000000001b8",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "00000190-bd13-08db-0000-0000000001b8",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 4
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "440"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Rolón954",
+            "given": [
+              "Beatriz277"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Beatriz277.Rolón954@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "4220 HARDING RD, PO BOX 380"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37205",
+            "country": "US"
+          }
+        ],
+        "gender": "female"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00000190-bd13-08db-0000-000000000208",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "00000190-bd13-08db-0000-000000000208",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 5
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "520"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Halvorson124",
+            "given": [
+              "Willia886"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Willia886.Halvorson124@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "1818 ALBION STREET"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37208",
+            "country": "US"
+          }
+        ],
+        "gender": "female"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00000190-bd13-08db-0000-000000000244",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "00000190-bd13-08db-0000-000000000244",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 1
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "580"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Eichmann909",
+            "given": [
+              "Clinton763"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Clinton763.Eichmann909@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "2000 CHURCH ST"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37236",
+            "country": "US"
+          }
+        ],
+        "gender": "male"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00000190-bd13-08db-0000-0000000002a8",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "00000190-bd13-08db-0000-0000000002a8",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 64
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "680"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Uribe503",
+            "given": [
+              "Andrés117"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Andrés117.Uribe503@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "2300 PATTERSON STREET"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37203",
+            "country": "US"
+          }
+        ],
+        "gender": "male"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00000190-bd13-08db-0000-000000000334",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "00000190-bd13-08db-0000-000000000334",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 342
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "820"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Ruecker817",
+            "given": [
+              "Luis923"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Luis923.Ruecker817@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "355 NEW SHACKLE ISLAND RD"
+            ],
+            "city": "HENDERSONVILLE",
+            "state": "TN",
+            "postalCode": "37075",
+            "country": "US"
+          }
+        ],
+        "gender": "female"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00000190-bd13-08db-0000-00000000033e",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "00000190-bd13-08db-0000-00000000033e",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 156
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "830"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Homenick806",
+            "given": [
+              "Zena758"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Zena758.Homenick806@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "391 WALLACE RD"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37211",
+            "country": "US"
+          }
+        ],
+        "gender": "female"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00000190-bd13-08db-0000-000000000352",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "00000190-bd13-08db-0000-000000000352",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 77
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "850"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Barrientos891",
+            "given": [
+              "Marco Antonio298"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Marco Antonio298.Barrientos891@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "2011 MURPHY AVENUE"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37203",
+            "country": "US"
+          }
+        ],
+        "gender": "male"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00000190-bd13-08db-0000-0000000003de",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "00000190-bd13-08db-0000-0000000003de",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 47
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "990"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Konopelski743",
+            "given": [
+              "Vernie449"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Vernie449.Konopelski743@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "313 NORTH MAIN ST"
+            ],
+            "city": "ASHLAND CITY",
+            "state": "TN",
+            "postalCode": "37015",
+            "country": "US"
+          }
+        ],
+        "gender": "female"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00000190-bd13-08db-0000-00000000295e",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "00000190-bd13-08db-0000-00000000295e",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 62
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "10590"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Lynch190",
+            "given": [
+              "Joe656"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Joe656.Lynch190@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "1233 17TH AVE S"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37212-2801",
+            "country": "US"
+          }
+        ],
+        "gender": "male"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00000190-bd13-08db-0000-000000006720",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "00000190-bd13-08db-0000-000000006720",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 53
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "26400"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Sisneros410",
+            "given": [
+              "Elsa29"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Elsa29.Sisneros410@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "2500 CHARLOTTE AVE"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37209-4129",
+            "country": "US"
+          }
+        ],
+        "gender": "female"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00000190-bd13-08db-0000-00000000812e",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "00000190-bd13-08db-0000-00000000812e",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 71
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "33070"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Bashirian201",
+            "given": [
+              "Teddy976"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Teddy976.Bashirian201@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "2001 MALLORY LN"
+            ],
+            "city": "FRANKLIN",
+            "state": "TN",
+            "postalCode": "37067-8235",
+            "country": "US"
+          }
+        ],
+        "gender": "male"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00000190-bd13-08db-0000-0000000081ec",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "00000190-bd13-08db-0000-0000000081ec",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 57
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "33260"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Franecki195",
+            "given": [
+              "Ileana390"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Ileana390.Franecki195@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "2204 CRESTMOOR RD"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37215-2002",
+            "country": "US"
+          }
+        ],
+        "gender": "female"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00000190-bd13-08db-0000-00000000da3e",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "00000190-bd13-08db-0000-00000000da3e",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 73
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "55870"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "O'Reilly797",
+            "given": [
+              "Elwood28"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Elwood28.O'Reilly797@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "313 N MAIN ST"
+            ],
+            "city": "ASHLAND CITY",
+            "state": "TN",
+            "postalCode": "37015-1347",
+            "country": "US"
+          }
+        ],
+        "gender": "male"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00000190-bd13-08db-0000-00000000e9de",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "00000190-bd13-08db-0000-00000000e9de",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 26
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "59870"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Emmerich580",
+            "given": [
+              "Dana512"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Dana512.Emmerich580@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "2239 HWY 41 S"
+            ],
+            "city": "GREENBRIER",
+            "state": "TN",
+            "postalCode": "37073-4536",
+            "country": "US"
+          }
+        ],
+        "gender": "male"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00000190-bd13-08db-0000-0000000102fc",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "00000190-bd13-08db-0000-0000000102fc",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 30
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "66300"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Bayer639",
+            "given": [
+              "Calvin845"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Calvin845.Bayer639@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "111 W KINGSTON SPRINGS RD"
+            ],
+            "city": "KINGSTON SPRINGS",
+            "state": "TN",
+            "postalCode": "37082-9121",
+            "country": "US"
+          }
+        ],
+        "gender": "male"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00000190-bd13-08db-0000-00000001091e",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "00000190-bd13-08db-0000-00000001091e",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 105
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "67870"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Kuvalis369",
+            "given": [
+              "Christoper325"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Christoper325.Kuvalis369@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "5002 CROSSINGS CIR"
+            ],
+            "city": "MOUNT JULIET",
+            "state": "TN",
+            "postalCode": "37122-8593",
+            "country": "US"
+          }
+        ],
+        "gender": "male"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00000190-bd13-08db-0000-000000011314",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "00000190-bd13-08db-0000-000000011314",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 24
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "70420"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Ebert178",
+            "given": [
+              "Leilani136"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Leilani136.Ebert178@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "2410 FRANKLIN PIKE"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37204-2227",
+            "country": "US"
+          }
+        ],
+        "gender": "female"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00000190-bd13-08db-0000-00000001144a",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "00000190-bd13-08db-0000-00000001144a",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 46
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "70730"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "O'Kon634",
+            "given": [
+              "Santo387"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Santo387.O'Kon634@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "4230 HARDING PIKE"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37205-2018",
+            "country": "US"
+          }
+        ],
+        "gender": "male"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00000190-bd13-08db-0000-000000011f6c",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "00000190-bd13-08db-0000-000000011f6c",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 44
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "73580"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Jones311",
+            "given": [
+              "Fletcher87"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Fletcher87.Jones311@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "2222 STATE ST"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37203-1869",
+            "country": "US"
+          }
+        ],
+        "gender": "male"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00000190-bd13-08db-0000-0000000122f0",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "00000190-bd13-08db-0000-0000000122f0",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 3
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "74480"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Zapata667",
+            "given": [
+              "Rafael239"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Rafael239.Zapata667@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "1195 OLD HICKORY BOULEVARD"
+            ],
+            "city": "BRENTWOOD",
+            "state": "TN",
+            "postalCode": "37027",
+            "country": "US"
+          }
+        ],
+        "gender": "male"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00000190-bd13-08db-0000-000000012462",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "00000190-bd13-08db-0000-000000012462",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 1
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "74850"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Rolón954",
+            "given": [
+              "Beatriz277"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Beatriz277.Rolón954@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "9040 CAROTHERS PARKWAY"
+            ],
+            "city": "FRANKLIN",
+            "state": "TN",
+            "postalCode": "37067",
+            "country": "US"
+          }
+        ],
+        "gender": "female"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00000190-bd13-08db-0000-0000000125d4",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "00000190-bd13-08db-0000-0000000125d4",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 258
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "75220"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Schaden604",
+            "given": [
+              "Elvin140"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Elvin140.Schaden604@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "5002 CROSSINGS CIRCLE"
+            ],
+            "city": "MOUNT JULIET",
+            "state": "TN",
+            "postalCode": "37122",
+            "country": "US"
+          }
+        ],
+        "gender": "male"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00000190-bd13-08db-0000-0000000125f2",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "00000190-bd13-08db-0000-0000000125f2",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 11
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "75250"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Adams676",
+            "given": [
+              "Toby274"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Toby274.Adams676@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "500 LONG HOLLOW PIKE"
+            ],
+            "city": "GOODLETTSVILLE",
+            "state": "TN",
+            "postalCode": "37072",
+            "country": "US"
+          }
+        ],
+        "gender": "male"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00000190-bd13-08db-0000-000000012610",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "00000190-bd13-08db-0000-000000012610",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 2
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "75280"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Gutmann970",
+            "given": [
+              "Rosanne862"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Rosanne862.Gutmann970@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "2302 MADISON STREET"
+            ],
+            "city": "CLARKSVILLE",
+            "state": "TN",
+            "postalCode": "37043",
+            "country": "US"
+          }
+        ],
+        "gender": "female"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00000190-bd13-08db-0000-00000001271e",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "00000190-bd13-08db-0000-00000001271e",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 7
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "75550"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Wolff180",
+            "given": [
+              "Cherish740"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Cherish740.Wolff180@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "342 21ST AVENUE NORTH"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37203",
+            "country": "US"
+          }
+        ],
+        "gender": "female"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    }
+  ]
+}
