@@ -241,8 +241,18 @@ foreach ($file in Get-ChildItem $PWD\output\fhir\*.json) {
     if ($LASTEXITCODE -eq 0) {
         Write-Host "Successfully sent $($file.Name) to the Azure Storage Account for the FHIR Loader to process."
         Move-Item $file.FullName $PWD\output\success
+        $success += 1
     } else {
         Write-Host "Failed to send $($file.Name) to the Azure Storage Account for the FHIR Loader to process."
         Move-Item $file.FullName $PWD\output\failed
     }
 }
+
+Write-Host "Synthetic data bundles numbering $success have been generated and sent to the Azure Storage Account for the FHIR Loader to process. The FHIR Loader will now process the data and send it to the FHIR Service."
+
+
+$token = (Get-AzAccessToken -ResourceUrl $fhirServiceUri).Token
+$headers = @{Authorization="Bearer $token"; "Accept"="application/fhir+json"; "Prefer"="respond-async"}
+
+
+Invoke-WebRequest -Method GET -Headers $headers -Uri "$fhirServiceUri/`$export?_container=ndjsonexport" -ContentType "application/json"  
