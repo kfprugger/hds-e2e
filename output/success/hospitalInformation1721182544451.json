@@ -1,0 +1,1644 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:36256fe0-f40e-3061-a353-8cd6c5f60877",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "36256fe0-f40e-3061-a353-8cd6c5f60877",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 165
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+            "valueInteger": 2
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+            "valueInteger": 0
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+            "valueInteger": 3
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "36256fe0-f40e-3061-a353-8cd6c5f60877"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ],
+            "text": "Healthcare Provider"
+          }
+        ],
+        "name": "TRISTAR SKYLINE MEDICAL CENTER",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "6157692000"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "3441 DICKERSON PIKE"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37207",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:471875c2-cd83-3c24-8a0f-6c45cb098a57",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "471875c2-cd83-3c24-8a0f-6c45cb098a57",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 145
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+            "valueInteger": 0
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+            "valueInteger": 0
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+            "valueInteger": 0
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "471875c2-cd83-3c24-8a0f-6c45cb098a57"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ],
+            "text": "Healthcare Provider"
+          }
+        ],
+        "name": "VANDERBILT UNIVERSITY MEDICAL CENTER",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "6153223454"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "1211 MEDICAL CENTER DRIVE"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37232",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:69540a50-4757-35d4-bb7d-e249714bbce2",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "69540a50-4757-35d4-bb7d-e249714bbce2",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 129
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+            "valueInteger": 0
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+            "valueInteger": 0
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+            "valueInteger": 0
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "69540a50-4757-35d4-bb7d-e249714bbce2"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ],
+            "text": "Healthcare Provider"
+          }
+        ],
+        "name": "SAINT THOMAS WEST HOSPITAL",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "6152222111"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "4220 HARDING RD, PO BOX 380"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37205",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5f100f58-90a0-3594-b43f-1581594b1a4f",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "5f100f58-90a0-3594-b43f-1581594b1a4f",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 83
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+            "valueInteger": 0
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+            "valueInteger": 0
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+            "valueInteger": 0
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "5f100f58-90a0-3594-b43f-1581594b1a4f"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ],
+            "text": "Healthcare Provider"
+          }
+        ],
+        "name": "METRO NASHVILLE GENERAL HOSPITAL",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "6153414490"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "1818 ALBION STREET"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37208",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:33c1861c-11d1-3def-9bb0-6413bae93695",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "33c1861c-11d1-3def-9bb0-6413bae93695",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 16
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+            "valueInteger": 0
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+            "valueInteger": 0
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+            "valueInteger": 0
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "33c1861c-11d1-3def-9bb0-6413bae93695"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ],
+            "text": "Healthcare Provider"
+          }
+        ],
+        "name": "SAINT THOMAS MIDTOWN HOSPITAL",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "6152845555"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "2000 CHURCH ST"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37236",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:247f5da9-4f94-38c1-a4fc-a3fdfb2aa753",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "247f5da9-4f94-38c1-a4fc-a3fdfb2aa753",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 130
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+            "valueInteger": 0
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+            "valueInteger": 0
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+            "valueInteger": 0
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "247f5da9-4f94-38c1-a4fc-a3fdfb2aa753"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ],
+            "text": "Healthcare Provider"
+          }
+        ],
+        "name": "TRISTAR CENTENNIAL MEDICAL CENTER",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "6153421000"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "2300 PATTERSON STREET"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37203",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d96c1a34-4bf9-3815-a58d-082e60900fee",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "d96c1a34-4bf9-3815-a58d-082e60900fee",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 139
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+            "valueInteger": 0
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+            "valueInteger": 0
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+            "valueInteger": 0
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "d96c1a34-4bf9-3815-a58d-082e60900fee"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ],
+            "text": "Healthcare Provider"
+          }
+        ],
+        "name": "TRISTAR SOUTHERN HILLS MEDICAL CENTER",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "6157814000"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "391 WALLACE RD"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37211",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:53483878-3ca0-3d6a-a830-04d4bfe73bd9",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "53483878-3ca0-3d6a-a830-04d4bfe73bd9",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 420
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+            "valueInteger": 0
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+            "valueInteger": 0
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+            "valueInteger": 0
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "53483878-3ca0-3d6a-a830-04d4bfe73bd9"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ],
+            "text": "Healthcare Provider"
+          }
+        ],
+        "name": "SAINT THOMAS HOSPITAL FOR SPECIALTY SURGERY",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "6155158200"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "2011 MURPHY AVENUE"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37203",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f9c56f70-0615-3bd1-9a6c-682bfab9dcfb",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "f9c56f70-0615-3bd1-9a6c-682bfab9dcfb",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 2
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+            "valueInteger": 0
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+            "valueInteger": 0
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+            "valueInteger": 0
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "f9c56f70-0615-3bd1-9a6c-682bfab9dcfb"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ],
+            "text": "Healthcare Provider"
+          }
+        ],
+        "name": "TRISTAR STONECREST MEDICAL CENTER",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "6157682000"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "200 STONECREST BOULEVARD"
+            ],
+            "city": "SMYRNA",
+            "state": "TN",
+            "postalCode": "37167",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1877062c-2198-3e73-b8d9-931e216ed180",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "1877062c-2198-3e73-b8d9-931e216ed180",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 83
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+            "valueInteger": 0
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+            "valueInteger": 0
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+            "valueInteger": 0
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "1877062c-2198-3e73-b8d9-931e216ed180"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ],
+            "text": "Healthcare Provider"
+          }
+        ],
+        "name": "TRISTAR ASHLAND CITY MEDICAL CENTER",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "6157923030"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "313 NORTH MAIN ST"
+            ],
+            "city": "ASHLAND CITY",
+            "state": "TN",
+            "postalCode": "37015",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:521ec87c-9b42-36e3-bc84-e5af4b1681dc",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "521ec87c-9b42-36e3-bc84-e5af4b1681dc",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 13
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+            "valueInteger": 3
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+            "valueInteger": 4
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "521ec87c-9b42-36e3-bc84-e5af4b1681dc"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ],
+            "text": "Healthcare Provider"
+          }
+        ],
+        "name": "HERMITAGE PSYCHIATRIC GROUP",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "615-889-4447"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "5653 FRIST BLVD"
+            ],
+            "city": "HERMITAGE",
+            "state": "TN",
+            "postalCode": "37076-2064",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:659c757a-658f-3898-9522-e71bc6c5daee",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "659c757a-658f-3898-9522-e71bc6c5daee",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 28
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+            "valueInteger": 75
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+            "valueInteger": 4
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+            "valueInteger": 17
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "659c757a-658f-3898-9522-e71bc6c5daee"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ],
+            "text": "Healthcare Provider"
+          }
+        ],
+        "name": "GOALS OF CARE, PLLC",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "931-444-5494"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "2035 VANTAGE POINTE"
+            ],
+            "city": "ASHLAND CITY",
+            "state": "TN",
+            "postalCode": "37015-4093",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f2e974f5-acfe-3016-a3e4-0a4b9874d0a7",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "f2e974f5-acfe-3016-a3e4-0a4b9874d0a7",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 53
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+            "valueInteger": 155
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+            "valueInteger": 20
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+            "valueInteger": 189
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "f2e974f5-acfe-3016-a3e4-0a4b9874d0a7"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ],
+            "text": "Healthcare Provider"
+          }
+        ],
+        "name": "PCP129420",
+        "address": [
+          {
+            "line": [
+              "718 THOMPSON LN"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37204-3612",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9ac58565-2753-381a-99cd-4a41695b2d4c",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "9ac58565-2753-381a-99cd-4a41695b2d4c",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 56
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+            "valueInteger": 457
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+            "valueInteger": 27
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+            "valueInteger": 83
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "9ac58565-2753-381a-99cd-4a41695b2d4c"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ],
+            "text": "Healthcare Provider"
+          }
+        ],
+        "name": "PCP191376",
+        "address": [
+          {
+            "line": [
+              "2303 CRESTMOOR RD"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37215-2003",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3fc31ed8-c83e-3d04-b2b0-82ede8698594",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "3fc31ed8-c83e-3d04-b2b0-82ede8698594",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 59
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+            "valueInteger": 331
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+            "valueInteger": 26
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+            "valueInteger": 24
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "3fc31ed8-c83e-3d04-b2b0-82ede8698594"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ],
+            "text": "Healthcare Provider"
+          }
+        ],
+        "name": "SWEET DREAMS ANESTHESIA INC",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "615-620-2320"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "28 WHITE BRIDGE RD"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37205-1467",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:85656a4d-2468-35e7-958d-97a56354ad84",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "85656a4d-2468-35e7-958d-97a56354ad84",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 54
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+            "valueInteger": 64
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+            "valueInteger": 22
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+            "valueInteger": 49
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "85656a4d-2468-35e7-958d-97a56354ad84"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ],
+            "text": "Healthcare Provider"
+          }
+        ],
+        "name": "UNIVERSITY COMMUNITY HEALTH SERVICES, INC",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "615-292-9770"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "601 BENTON AVE"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37204-2303",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:88670220-d2d6-3035-83d5-843bbe279e5d",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "88670220-d2d6-3035-83d5-843bbe279e5d",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 44
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+            "valueInteger": 305
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+            "valueInteger": 28
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+            "valueInteger": 22
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "88670220-d2d6-3035-83d5-843bbe279e5d"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ],
+            "text": "Healthcare Provider"
+          }
+        ],
+        "name": "NASHVILLE KNEE AND SHOULDER CENTER, PLLC",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "615-329-2520"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "345 23RD AVE N"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37203-1513",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:88d62d44-1b39-3ebe-8136-d924e97e0a1d",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "88d62d44-1b39-3ebe-8136-d924e97e0a1d",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 67
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+            "valueInteger": 51
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+            "valueInteger": 88
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+            "valueInteger": 50
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "88d62d44-1b39-3ebe-8136-d924e97e0a1d"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ],
+            "text": "Healthcare Provider"
+          }
+        ],
+        "name": "CENTENNIAL PSYCHIATRIC ASSOCIATES, LLC",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "615-342-1000"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "2401 PARMAN PL"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37203-1518",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5909f184-b8cf-3208-a87e-515d88351655",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "5909f184-b8cf-3208-a87e-515d88351655",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 35
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+            "valueInteger": 23
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+            "valueInteger": 18
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+            "valueInteger": 6
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "5909f184-b8cf-3208-a87e-515d88351655"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ],
+            "text": "Healthcare Provider"
+          }
+        ],
+        "name": "ADVANCED DIAGNOSTIC IMAGING PC",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "615-730-8674"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "2201 MURPHY AVE"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37203-1883",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:09fdf5ab-e047-34dc-ab2f-56a5aa75f900",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "09fdf5ab-e047-34dc-ab2f-56a5aa75f900",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 66
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+            "valueInteger": 48
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+            "valueInteger": 22
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+            "valueInteger": 98
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "09fdf5ab-e047-34dc-ab2f-56a5aa75f900"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ],
+            "text": "Healthcare Provider"
+          }
+        ],
+        "name": "VANDERBILT UNIVERSITY MEDICAL CENTER",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "615-259-8755"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "306 OLD HICKORY BLVD"
+            ],
+            "city": "MADISON",
+            "state": "TN",
+            "postalCode": "37115-3608",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7c19621a-06c5-3092-9c61-ed10f8e448f8",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "7c19621a-06c5-3092-9c61-ed10f8e448f8",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 48
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+            "valueInteger": 319
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+            "valueInteger": 22
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+            "valueInteger": 36
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "7c19621a-06c5-3092-9c61-ed10f8e448f8"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ],
+            "text": "Healthcare Provider"
+          }
+        ],
+        "name": "ADVANCED DIAGNOSTIC IMAGING PC",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "615-352-0011"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "24 WHITE BRIDGE RD"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37205-1411",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5bc3e0d6-c9a7-3255-86f7-20a70b40c196",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "5bc3e0d6-c9a7-3255-86f7-20a70b40c196",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 5
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+            "valueInteger": 0
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+            "valueInteger": 0
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+            "valueInteger": 0
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "5bc3e0d6-c9a7-3255-86f7-20a70b40c196"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ],
+            "text": "Healthcare Provider"
+          }
+        ],
+        "name": "CONCENTRA URGENT CARE - NASHVILLE SOUTH",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "615-837-4360"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "4300 SIDCO DRIVE"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37204",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:42130030-b5df-39b5-8f70-3e9a1e0b46a4",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "42130030-b5df-39b5-8f70-3e9a1e0b46a4",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 9
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+            "valueInteger": 0
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+            "valueInteger": 0
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+            "valueInteger": 0
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "42130030-b5df-39b5-8f70-3e9a1e0b46a4"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ],
+            "text": "Healthcare Provider"
+          }
+        ],
+        "name": "TENNESSEE URGENT CARE ASSOCIATES - WHITE BRIDGE ROAD FACILITY",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "615-356-6877"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "339 WHITE BRIDGE PIKE"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37209",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c8845035-753f-3cb1-a141-1a0b1893ed81",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "c8845035-753f-3cb1-a141-1a0b1893ed81",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+            "valueInteger": 0
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+            "valueInteger": 0
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+            "valueInteger": 0
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "c8845035-753f-3cb1-a141-1a0b1893ed81"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ],
+            "text": "Healthcare Provider"
+          }
+        ],
+        "name": "MUSIC VALLEY MEDICAL CENTER",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "615-777-9336"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "2416 MUSIC VALLEY DRIVE"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37214",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:763a4b5a-59af-31ba-b2a1-86c193dfd3f2",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "763a4b5a-59af-31ba-b2a1-86c193dfd3f2",
+        "extension": [
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-encounters-extension",
+            "valueInteger": 5
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-procedures-extension",
+            "valueInteger": 0
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-labs-extension",
+            "valueInteger": 0
+          },
+          {
+            "url": "http://synthetichealth.github.io/synthea/utilization-prescriptions-extension",
+            "valueInteger": 0
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "763a4b5a-59af-31ba-b2a1-86c193dfd3f2"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ],
+            "text": "Healthcare Provider"
+          }
+        ],
+        "name": "CONCENTRA URGENT CARE - NASHVILLE CENTRAL",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "615-321-5698"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "342 21ST AVENUE NORTH"
+            ],
+            "city": "NASHVILLE",
+            "state": "TN",
+            "postalCode": "37203",
+            "country": "US"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    }
+  ]
+}

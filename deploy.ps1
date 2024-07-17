@@ -230,9 +230,6 @@ docker run --rm -v $PWD/output:/output --name synthea-docker intersystemsdc/iris
 
 
 # Send the synthetic data to the Azure Storage Account for the FHIR Loader to process new files you just generated.
-$fhirSA = Get-AzStorageAccount -ResourceGroupName $resourceGroupName -Name $storageAccountName
-$ctx = $fhirSA.Context
-$containerName = "bundles"
 
 foreach ($file in Get-ChildItem $PWD\output\fhir\*.json) {
     $file.FullName
@@ -256,3 +253,21 @@ $headers = @{Authorization="Bearer $token"; "Accept"="application/fhir+json"; "P
 
 
 Invoke-WebRequest -Method GET -Headers $headers -Uri "$fhirServiceUri/`$export?_container=ndjsonexport" -ContentType "application/json"  
+
+# Get all folders for the storage account with the name $exportSAName
+$ctx = New-AzStorageContext -StorageAccountName $exportSAName -UseConnectedAccount
+if (!(get-azdatalakeGen2ChildItem -FileSystem ndjsonexport -Context $ctx | ? IsDirectory -EQ $true | sort Path -Descending -ErrorAction SilentlyContinue)) {
+    Write-Host "This is the first Export. Exporting without _since parameter to get all data."
+    Invoke-WebRequest -Method GET -Headers $headers -Uri "$fhirServiceUri/`$export?_container=ndjsonexport" -ContentType "application/json"  
+} else {
+    $folders = get-azdatalakeGen2ChildItem -FileSystem ndjsonexport -Context $ctx | ? IsDirectory -EQ $true | sort Path -Descending
+    $latestFolderName = $folders[0].Path.Substring(0,$folders[0].Path.indexof("-"))
+
+    # Format the latest folder name to "YYYY-MM-DDTHH:mm:ss"
+    $latestFolderDateTime = [DateTime]::ParseExact($latestFolderName, "yyyyMMddTHHmmss", $null)
+    $latestFolder = $latestFolderDateTime.ToString("yyyy-MM-ddTHH:mm:ss")
+    Write-Host "Export initiated for all records after: $latestFolder"
+
+}
+
+
