@@ -199,6 +199,7 @@ $params4FHIRLoader = @{
     fhirAdminOID=$fhirAdminOID
     currentUserId=$currentUserOID
     fhirServiceUri=$fhirServiceUri
+    akvName=$akvName
 }
 
 
@@ -216,6 +217,7 @@ foreach ($key in $fhirLoaderDeployment.Outputs.Keys) {
     $value = $fhirLoaderDeployment.Outputs[$key].Value
     Set-Variable -Name $key -Value $value
 }
+
 
 
 ## Run Synthea to generate synthetic data
@@ -248,8 +250,8 @@ foreach ($file in Get-ChildItem $PWD\output\fhir\*.json) {
 Write-Host "Synthetic data bundles numbering $success have been generated and sent to the Azure Storage Account for the FHIR Loader to process. The FHIR Loader will now process the data and send it to the FHIR Service."
 
 
-$token = (Get-AzAccessToken -ResourceUrl $fhirServiceUri).Token
-$headers = @{Authorization="Bearer $token"; "Accept"="application/fhir+json"; "Prefer"="respond-async"}
+$exportToken = (Get-AzAccessToken -ResourceUrl $fhirServiceUri).Token
+$headers = @{Authorization="Bearer $exportToken"; "Accept"="application/fhir+json"; "Prefer"="respond-async"}
 
 
 Invoke-WebRequest -Method GET -Headers $headers -Uri "$fhirServiceUri/`$export?_container=ndjsonexport" -ContentType "application/json"  
@@ -269,5 +271,3 @@ if (!(get-azdatalakeGen2ChildItem -FileSystem ndjsonexport -Context $ctx | ? IsD
     Write-Host "Export initiated for all records after: $latestFolder"
 
 }
-
-

@@ -95,6 +95,24 @@ resource cogSvcAcct 'Microsoft.CognitiveServices/accounts@2023-05-01' = {
   }
 }
 
+@description('Output variables for use in Microsoft Fabric HDS')
+resource nlp_secret_name 'Microsoft.KeyVault/vaults/secrets@2023-07-01' = {
+  name: 'nlp-secret'
+  parent: hdsAKV
+  properties: {
+    value: cogSvcAcct.listKeys().keys[0].value
+  }
+}
+
+resource nlp_secret_endpoint 'Microsoft.KeyVault/vaults/secrets@2023-07-01' = {
+  name: 'nlp-endpoint'
+  parent: hdsAKV
+  properties: {
+    value: cogSvcAcct.properties.endpoint
+  }
+}
+
+
 
 resource hdsAKV 'Microsoft.KeyVault/vaults@2023-07-01' existing = {
   name: akvName
@@ -127,6 +145,8 @@ resource exportSA 'Microsoft.Storage/storageAccounts@2023-05-01' = {
     }
   }
 }
+
+output exportSAName string = exportSA.name
 
 @description('Role assignment for the FHIR service to write to the export storage account')
 resource storageBlobContribRoleAssignment4FHIR 'Microsoft.Authorization/roleAssignments@2022-04-01' = {
