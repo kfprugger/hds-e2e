@@ -8,7 +8,7 @@
 
 
 # Run PreReqs.ps1 to ensure all necessary tools are installed
-.\prereqs.ps1
+#.\prereqs.ps1
 
 # Begin the deployment process
 ## change this to whatever short prefix you'd like. No more than 5 lowercase letters or numbers.
@@ -28,7 +28,7 @@ $fhirServiceName = $svcNamingPrefix+"fhir"+$location
 $ahdsServiceName = "hltwrk$location"
 
 ## Synthea Variables
-$syntheticPatientCount = 10
+$syntheticPatientCount = 100
 $syntheticHospitals = "true"
 $syntheticPractitioners = "true"
 

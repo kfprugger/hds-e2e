@@ -46,7 +46,7 @@ pwsh -c {
     "Switching operating mode to Linux from Windows container mode"
     cd "c:\program Files\Docker\Docker"                                                                                                                                                                                                                         
     .\DockerCli.exe -SwitchLinuxEngine
-    sleep 15
+    sleep 20
     
 }
 

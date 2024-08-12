@@ -100,7 +100,7 @@ resource nlp_secret_name 'Microsoft.KeyVault/vaults/secrets@2023-07-01' = {
   name: 'nlp-secret'
   parent: hdsAKV
   properties: {
-    value: cogSvcAcct.listKeys().keys[0].value
+    value: cogSvcAcct.listKeys().key1
   }
 }
 
@@ -109,6 +109,14 @@ resource nlp_secret_endpoint 'Microsoft.KeyVault/vaults/secrets@2023-07-01' = {
   parent: hdsAKV
   properties: {
     value: cogSvcAcct.properties.endpoint
+  }
+}
+
+resource lang_secret_key 'Microsoft.KeyVault/vaults/secrets@2023-07-01' = {
+  name: 'LanguageServiceKey'
+  parent: hdsAKV
+  properties: {
+    value: cogSvcAcct.listKeys().key1
   }
 }
 
