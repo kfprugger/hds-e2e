@@ -12,7 +12,7 @@
 
 # Begin the deployment process
 ## change this to whatever short prefix you'd like. No more than 5 lowercase letters or numbers.
-$svcNamingPrefix = "rjb"
+$svcNamingPrefix = "rj1"
 
 ## Entra ID Group name of the admins who will have access to the FHIR Service, storage account, and other parts of the infra deployment outside of the current user executing this script.
 $fhirAdminEntraGrpName = "sg-fhir-services"
@@ -22,10 +22,10 @@ $tenantId = (Get-AzContext).Tenant.Id
 
 ## Create the resource group name, location, and service names
 $resourceGroupName = "rg-hdsinfra"
-$akvName = "hdsakveus"
+$akvName = "akv"+$svcNamingPrefix+"hds"+$location
 $location= 'eastus'
 $fhirServiceName = $svcNamingPrefix+"fhir"+$location
-$ahdsServiceName = "hltwrk$location"
+$ahdsServiceName = "hltwrk"+$svcNamingPrefix+$location
 
 ## Synthea Variables
 $syntheticPatientCount = 100
@@ -177,6 +177,7 @@ if (-not (Test-Path $PWD\output\failed)) {
 if (-not (Test-Path $PWD\output\success)) {
     New-Item -ItemType Directory -Path $PWD\output\success
 }
+$fabBaseUri = "https://api.fabric.microsoft.com/v1/"
 
 ## Check if the FHIR Service is up and running
 $token = (Get-AzAccessToken -ResourceUrl $fhirServiceUri).Token
